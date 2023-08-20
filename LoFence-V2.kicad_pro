@@ -57,9 +57,9 @@
         }
       ],
       "drc_exclusions": [
-        "copper_edge_clearance|39130507|94247160|c3b3d87f-fdf0-44dd-9e08-6afdd3f4ecd4|4486a101-60a8-4a7c-9891-da0c2694113c",
+        "copper_edge_clearance|39116000|94247756|c3b3d87f-fdf0-44dd-9e08-6afdd3f4ecd4|3cc94b8d-290d-4128-b28d-19acd6c29a70",
         "copper_edge_clearance|53944600|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|60683572-dae0-40aa-82b5-6c16d037f96f",
-        "copper_edge_clearance|92080000|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|69997c8a-1cee-4c42-afd3-1dfa7b300c90"
+        "copper_edge_clearance|91130000|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|b25c9285-31df-4e26-993d-bde6b9be32b1"
       ],
       "meta": {
         "filename": "board_design_settings.json",
