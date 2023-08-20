@@ -7,7 +7,7 @@
   (paper "A4")
   (title_block
     (title "LoFence V2")
-    (rev "0.1")
+    (rev "0.2")
   )
 
   (layers
@@ -7140,7 +7140,7 @@
   (gr_text "JLCJLCJLCJLC" (at 89.1 143.8) (layer "F.SilkS") (tstamp 4300937e-61f7-4e13-b72f-f8b03dd84536)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "LoFence V2 REV ${REVISION}\nhttps://github.com/alex9779/lofence-v2\n" (at 71 149.5) (layer "F.SilkS") (tstamp 69211c6e-81ef-4bee-8515-8e5fd0944814)
+  (gr_text "${TITLE} REV ${REVISION}\nhttps://github.com/alex9779/lofence-v2\n" (at 71 149.5) (layer "F.SilkS") (tstamp 69211c6e-81ef-4bee-8515-8e5fd0944814)
     (effects (font (size 1.3 1.3) (thickness 0.25)))
   )
   (gr_text "LA" (at 91.5 90.678 90) (layer "F.SilkS") (tstamp 9abab9ff-7a97-4710-ae2e-42c9bd56e50a)
