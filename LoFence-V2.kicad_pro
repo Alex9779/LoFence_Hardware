@@ -57,8 +57,18 @@
         }
       ],
       "drc_exclusions": [
+        "copper_edge_clearance|103744000|94156280|23d3d269-ac71-4213-a22d-7b3540b3cae7|494846d8-e0b2-4d9f-8464-bc49762ec335",
+        "copper_edge_clearance|104394000|93906457|23d3d269-ac71-4213-a22d-7b3540b3cae7|2e4f339e-702f-4d79-90ff-8ceeb8118289",
         "copper_edge_clearance|39116000|94247756|c3b3d87f-fdf0-44dd-9e08-6afdd3f4ecd4|3cc94b8d-290d-4128-b28d-19acd6c29a70",
-        "copper_edge_clearance|53944600|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|60683572-dae0-40aa-82b5-6c16d037f96f"
+        "copper_edge_clearance|53944600|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|60683572-dae0-40aa-82b5-6c16d037f96f",
+        "copper_edge_clearance|86833200|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|f5069c9c-e7a8-40e5-b2ed-08471222c07c",
+        "duplicate_footprints|71000000|51000000|c7d0a78d-253e-4ca7-8b04-7abb84623bfd|2591d14e-7e77-4a53-828e-03c794e428e7",
+        "extra_footprint|71000000|44500000|2591d14e-7e77-4a53-828e-03c794e428e7|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|71000000|51000000|c7d0a78d-253e-4ca7-8b04-7abb84623bfd|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|102461219|94197513|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|29c046ea-aa2b-4ba1-9255-bdc3ff268027",
+        "silk_edge_clearance|102744000|94250000|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|9af8f48b-ffcb-482b-91f2-608033a6144d",
+        "silk_edge_clearance|105538849|92848200|23d3d269-ac71-4213-a22d-7b3540b3cae7|dd69d55f-855f-429a-afa5-05128bf6ede3",
+        "silk_edge_clearance|80637142|94231619|cf9668f5-4966-42b6-a1b4-53ff23fefdc0|5cb66d8d-5b72-4d88-b236-5750c28c06ba"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -178,7 +188,9 @@
       ],
       "track_widths": [
         0.0,
-        0.15
+        1.2,
+        1.6,
+        2.4
       ],
       "via_dimensions": [
         {
@@ -429,7 +441,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.2,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -446,7 +458,7 @@
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
+        "track_width": 0.27,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -476,7 +488,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(BT1-Pad1)"
+        "pattern": "Net-(BT1-+)"
       }
     ]
   },
@@ -539,6 +551,10 @@
     [
       "8df399d3-3099-43b5-83f1-a83fbf65205c",
       ""
+    ],
+    [
+      "efd635f6-2055-4669-9417-4264f7a45d39",
+      "Connectors and Debug"
     ]
   ],
   "text_variables": {}
