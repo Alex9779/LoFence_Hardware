@@ -3239,7 +3239,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 24.13 21.59 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005c6750d9)
     (property "Reference" "J1" (at 26.67 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
@@ -3256,7 +3256,7 @@
     (property "TME Order #" "" (at 24.13 21.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid da33c658-8dac-4a7f-a4d9-1971d45428fd))
+    (pin "1" (uuid 73f27c58-9640-49f3-8761-f49bac0e0ff1))
     (instances
       (project "LoFence-V2"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
@@ -3267,7 +3267,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 77.47 21.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005c675208)
     (property "Reference" "J2" (at 76.2 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
@@ -4586,7 +4586,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 265.43 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d0dbc01)
     (property "Reference" "MH3" (at 267.97 153.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5223,7 +5223,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 265.43 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005e0da76c)
     (property "Reference" "MH1" (at 267.97 143.6116 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5250,7 +5250,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 265.43 149.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005e0da8de)
     (property "Reference" "MH2" (at 267.97 148.6916 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5679,7 +5679,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 265.43 160.02 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 9e3b8b75-79f2-4a70-8ae9-731a126b6413)
     (property "Reference" "MH4" (at 267.97 158.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
