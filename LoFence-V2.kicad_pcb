@@ -5783,7 +5783,7 @@
     (property "ki_keywords" "mounting hole")
     (path "/9e3b8b75-79f2-4a70-8ae9-731a126b6413")
     (attr exclude_from_pos_files)
-    (fp_text reference "MH4" (at 0 -3.8) (layer "F.SilkS")
+    (fp_text reference "MH4" (at 0 -3.8) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 607869b8-eb14-4bdc-babb-fa4b8a113da7)
     )
