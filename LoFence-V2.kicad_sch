@@ -5441,7 +5441,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 117.348 48.26 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 0f475338-414c-4255-93fa-e553465c2dae)
     (property "Reference" "B31" (at 119.38 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5469,7 +5469,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 117.348 53.594 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 17f3b290-6e51-427e-8fce-a9dfae95d502)
     (property "Reference" "B41" (at 119.38 53.594 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5497,7 +5497,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 117.348 43.18 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35aeff50-4144-4f22-88ae-b99a06ea3766)
     (property "Reference" "B21" (at 119.38 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -6069,7 +6069,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 117.348 37.846 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cb66d8f2-95b3-4330-ad52-204d6bf2fec3)
     (property "Reference" "B11" (at 119.38 37.846 0)
       (effects (font (size 1.27 1.27)) (justify left))
