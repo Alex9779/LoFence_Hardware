@@ -5,6 +5,51 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x02" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x02_1_1"
+        (rectangle (start -1.27 -2.413) (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Generic:Conn_01x03" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -418,11 +463,16 @@
 
   (no_connect (at 111.506 37.592) (uuid 3bfc9187-c72f-49d3-88db-8be5349a1e75))
 
+  (polyline (pts (xy 42.672 91.44) (xy 15.24 91.44))
+    (stroke (width 0) (type default))
+    (uuid 042674f1-f42b-4dea-9e9d-b64e404712d0)
+  )
+
   (wire (pts (xy 31.75 28.702) (xy 29.21 28.702))
     (stroke (width 0) (type default))
     (uuid 047ffe0e-58d0-42bc-b7c9-c21d441d1cb2)
   )
-  (wire (pts (xy 27.94 51.816) (xy 25.4 51.816))
+  (wire (pts (xy 29.464 51.816) (xy 26.924 51.816))
     (stroke (width 0) (type default))
     (uuid 09d1229c-4975-4f51-97f6-6995bc433e87)
   )
@@ -430,7 +480,7 @@
     (stroke (width 0) (type default))
     (uuid 167a0c1d-2bb6-4f8a-8131-97c91fb490c9)
   )
-  (polyline (pts (xy 40.64 63.246) (xy 40.64 40.386))
+  (polyline (pts (xy 42.672 63.246) (xy 42.672 40.386))
     (stroke (width 0) (type default))
     (uuid 16b4512e-f751-4f4f-8e57-f3dd86b49a24)
   )
@@ -441,6 +491,10 @@
   (polyline (pts (xy 63.5 37.592) (xy 15.24 37.592))
     (stroke (width 0) (type default))
     (uuid 1d8ddb07-2ae8-461b-ab84-332e59b2b336)
+  )
+  (polyline (pts (xy 42.672 114.3) (xy 42.672 91.44))
+    (stroke (width 0) (type default))
+    (uuid 1fd84e7a-a71d-400a-82ea-923840bd3ac6)
   )
 
   (wire (pts (xy 78.486 32.512) (xy 81.026 32.512))
@@ -459,7 +513,7 @@
     (stroke (width 0) (type default))
     (uuid 2ae6a1f9-b29a-4204-8e9d-f71a3279cd88)
   )
-  (wire (pts (xy 27.94 74.676) (xy 25.4 74.676))
+  (wire (pts (xy 29.464 74.676) (xy 26.924 74.676))
     (stroke (width 0) (type default))
     (uuid 2eafd0f5-4d2a-450d-b69f-6687de5dfcbe)
   )
@@ -475,7 +529,7 @@
     (stroke (width 0) (type default))
     (uuid 31721b40-cce6-4e16-be4e-f471a744e0bd)
   )
-  (polyline (pts (xy 40.64 63.246) (xy 15.24 63.246))
+  (polyline (pts (xy 42.672 63.246) (xy 15.24 63.246))
     (stroke (width 0) (type default))
     (uuid 31eb89e2-9c50-4e97-93f8-55e70943ae91)
   )
@@ -484,7 +538,7 @@
     (stroke (width 0) (type default))
     (uuid 32a17d48-ef28-4921-82f1-e2fb84f2fb62)
   )
-  (wire (pts (xy 27.94 56.896) (xy 25.4 56.896))
+  (wire (pts (xy 29.464 56.896) (xy 26.924 56.896))
     (stroke (width 0) (type default))
     (uuid 38ab71e1-170b-430e-bee9-af6ba43da77c)
   )
@@ -500,7 +554,7 @@
     (stroke (width 0) (type default))
     (uuid 406e70cd-061c-4994-838c-d1062270ee38)
   )
-  (polyline (pts (xy 40.64 88.646) (xy 40.64 65.786))
+  (polyline (pts (xy 42.672 88.646) (xy 42.672 65.786))
     (stroke (width 0) (type default))
     (uuid 4407fb39-40e2-466b-b846-3314aaece2dd)
   )
@@ -526,7 +580,16 @@
     (stroke (width 0) (type default))
     (uuid 5a560c8b-e3b6-4058-a0a8-e4553c4fd94e)
   )
-  (polyline (pts (xy 40.64 40.386) (xy 15.24 40.386))
+  (polyline (pts (xy 15.24 114.3) (xy 42.672 114.3))
+    (stroke (width 0) (type default))
+    (uuid 60f593ce-aa09-4210-9a17-0789e6bb8418)
+  )
+
+  (wire (pts (xy 26.924 102.87) (xy 29.464 102.87))
+    (stroke (width 0) (type default))
+    (uuid 6247c522-c002-4b97-8937-19e0f66036e8)
+  )
+  (polyline (pts (xy 42.672 40.386) (xy 15.24 40.386))
     (stroke (width 0) (type default))
     (uuid 625d6934-1118-4e88-ba3c-af64c02277b8)
   )
@@ -544,11 +607,16 @@
     (uuid 6dbc96b4-5b07-47c0-a8fd-46dd8fdfc395)
   )
 
-  (wire (pts (xy 27.94 49.276) (xy 25.4 49.276))
+  (wire (pts (xy 29.464 49.276) (xy 26.924 49.276))
     (stroke (width 0) (type default))
     (uuid 6fee1bd7-c39a-475b-a946-5e71743213af)
   )
-  (wire (pts (xy 27.94 82.296) (xy 25.4 82.296))
+  (polyline (pts (xy 15.24 114.3) (xy 15.24 91.44))
+    (stroke (width 0) (type default))
+    (uuid 79a83324-3ca9-43c6-bd4d-7a010bb2f06d)
+  )
+
+  (wire (pts (xy 29.464 82.296) (xy 26.924 82.296))
     (stroke (width 0) (type default))
     (uuid 7c251d9c-7dd3-466e-87e9-fc8e52bb8d29)
   )
@@ -564,7 +632,7 @@
     (stroke (width 0) (type default))
     (uuid 85f2032b-a907-4978-9b3d-2dd299a4104f)
   )
-  (wire (pts (xy 27.94 54.356) (xy 25.4 54.356))
+  (wire (pts (xy 29.464 54.356) (xy 26.924 54.356))
     (stroke (width 0) (type default))
     (uuid 8be6c9b2-08ab-40cd-8b6e-b58575f65188)
   )
@@ -577,7 +645,7 @@
     (uuid 91c1dc0f-9154-4f6c-87b7-cd576c3f43df)
   )
 
-  (wire (pts (xy 25.4 79.756) (xy 27.94 79.756))
+  (wire (pts (xy 26.924 79.756) (xy 29.464 79.756))
     (stroke (width 0) (type default))
     (uuid 93d76b28-c65e-4f5e-9ed9-02b0bfb89fb4)
   )
@@ -598,15 +666,19 @@
     (stroke (width 0) (type default))
     (uuid a54984e6-7173-4a9a-834f-50d0a2e0c579)
   )
+  (wire (pts (xy 26.924 105.41) (xy 29.464 105.41))
+    (stroke (width 0) (type default))
+    (uuid abb66f74-b00f-4a5e-a770-bb0aafdb52b4)
+  )
   (wire (pts (xy 91.186 50.292) (xy 88.646 50.292))
     (stroke (width 0) (type default))
     (uuid b5055d35-c426-4066-9cb7-ce429f116ba0)
   )
-  (polyline (pts (xy 40.64 65.786) (xy 15.24 65.786))
+  (polyline (pts (xy 42.672 65.786) (xy 15.24 65.786))
     (stroke (width 0) (type default))
     (uuid bc6e2fd1-e389-44fc-b8cb-87e8d64240ef)
   )
-  (polyline (pts (xy 15.24 88.646) (xy 40.64 88.646))
+  (polyline (pts (xy 15.24 88.646) (xy 42.672 88.646))
     (stroke (width 0) (type default))
     (uuid be9f6d45-4513-4181-b340-9fe1e58b7ce1)
   )
@@ -631,7 +703,7 @@
     (stroke (width 0) (type default))
     (uuid dc7778a8-1bfa-4285-8647-1de179f5e25d)
   )
-  (wire (pts (xy 25.4 77.216) (xy 27.94 77.216))
+  (wire (pts (xy 26.924 77.216) (xy 29.464 77.216))
     (stroke (width 0) (type default))
     (uuid dccddbec-5a84-4b91-8290-5e6573dc945f)
   )
@@ -644,6 +716,10 @@
     (uuid f84da9c8-845f-44fe-a5f1-25f1d228dc09)
   )
 
+  (text "Conn Flash LA" (at 16.51 93.98 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4e00201e-f3a3-4173-ab7e-29059cf55588)
+  )
   (text "Conn Debug MCU" (at 16.51 42.926 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 844d2925-3a7c-4e7f-82e4-b3dd59e79d4c)
@@ -682,10 +758,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "LA_RX" (shape input) (at 25.4 77.216 180) (fields_autoplaced)
+  (global_label "LA_RX" (shape input) (at 26.924 77.216 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 47e3f8c0-de8d-46fd-bc12-e1a65f2d410d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.5052 77.216 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 19.0292 77.216 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "LA_BOOT" (shape input) (at 26.924 105.41 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 4827108b-68c7-4852-a671-8ed860094f6d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 16.6101 105.41 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -696,24 +779,31 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "MCU_RX" (shape input) (at 25.4 51.816 180) (fields_autoplaced)
+  (global_label "MCU_RX" (shape input) (at 26.924 51.816 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ab400601-72af-4128-bde3-4b91747852d0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 15.57 51.816 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.094 51.816 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "MCU_TX" (shape input) (at 25.4 54.356 180) (fields_autoplaced)
+  (global_label "LA_RX" (shape input) (at 26.924 102.87 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b25965e0-5f9d-4048-ae3b-4d028d6a4040)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 19.0292 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "MCU_TX" (shape input) (at 26.924 54.356 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid b88a2212-2674-4840-b536-0446c7ec13c0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 15.8724 54.356 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.3964 54.356 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "LA_TX" (shape input) (at 25.4 79.756 180) (fields_autoplaced)
+  (global_label "LA_TX" (shape input) (at 26.924 79.756 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d2465638-8cb1-4082-97be-bfaa7696550a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.8076 79.756 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 19.3316 79.756 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -749,7 +839,7 @@
   (symbol (lib_id "Device:LED") (at 94.996 23.622 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0432a435-dc26-44c7-bab4-c565cb202376)
-    (property "Reference" "D3" (at 93.726 18.542 0)
+    (property "Reference" "D?" (at 93.726 18.542 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "EMERALD" (at 93.726 20.8534 0)
@@ -773,9 +863,9 @@
     (pin "1" (uuid e15784f4-3460-46bc-9c08-9c203bb1daef))
     (pin "2" (uuid ed054bed-74f0-4058-a003-3b584dcc2145))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "D3") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "D4") (unit 1)
@@ -784,26 +874,26 @@
     )
   )
 
-  (symbol (lib_id "lofence-rescue:+3.3V-power") (at 25.4 74.676 0) (unit 1)
+  (symbol (lib_id "lofence-rescue:+3.3V-power") (at 26.924 74.676 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c9c78ae-4f29-4b72-9505-2efa20481d2d)
-    (property "Reference" "#PWR029" (at 25.4 78.486 0)
+    (property "Reference" "#PWR?" (at 26.924 78.486 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 25.781 70.2818 0)
+    (property "Value" "+3.3V" (at 27.305 70.2818 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 25.4 74.676 0)
+    (property "Footprint" "" (at 26.924 74.676 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 25.4 74.676 0)
+    (property "Datasheet" "" (at 26.924 74.676 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a533a88d-831c-4a06-8211-3bcb4d308081))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR035") (unit 1)
@@ -815,7 +905,7 @@
   (symbol (lib_id "Device:LED") (at 94.996 41.402 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 151c9a1c-3450-4d46-9321-09df20c9dae1)
-    (property "Reference" "D5" (at 93.726 36.322 0)
+    (property "Reference" "D?" (at 93.726 36.322 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "EMERALD" (at 93.726 38.6334 0)
@@ -839,9 +929,9 @@
     (pin "1" (uuid bf91e938-22e1-4a76-a068-c153c2440d44))
     (pin "2" (uuid fc043a65-6adf-4dfd-8471-53c26b2a85ac))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "D5") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "D6") (unit 1)
@@ -850,25 +940,25 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 33.02 77.216 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 34.544 77.216 0) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid 1fc95b50-a7f9-4d6b-b04b-56728a7bfcdd)
-    (property "Reference" "J4" (at 35.56 79.756 90)
+    (property "Reference" "J?" (at 37.084 79.756 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "DEBUG LA" (at 38.1 83.566 90)
+    (property "Value" "DEBUG LA" (at 39.624 83.566 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 33.02 77.216 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 34.544 77.216 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 33.02 77.216 0)
+    (property "Datasheet" "~" (at 34.544 77.216 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "TME Order #" "" (at 33.02 77.216 0)
+    (property "TME Order #" "" (at 34.544 77.216 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB Position Offset" "" (at 33.02 77.216 0)
+    (property "JLCPCB Position Offset" "" (at 34.544 77.216 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ba182d78-2610-4674-9a98-16d55b24b90c))
@@ -876,9 +966,9 @@
     (pin "3" (uuid 7e6ff23d-b109-4b5f-aa17-9f9df4f828ac))
     (pin "4" (uuid 90d2d8a2-625b-4054-a76e-30411810d7ac))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "J4") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "J6") (unit 1)
@@ -890,7 +980,7 @@
   (symbol (lib_id "lofence-rescue:+3.3V-power") (at 46.99 21.082 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 260a2ee8-2664-44e8-b9ca-1da41f6e8d0a)
-    (property "Reference" "#PWR035" (at 46.99 24.892 0)
+    (property "Reference" "#PWR?" (at 46.99 24.892 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 47.371 16.6878 0)
@@ -904,9 +994,9 @@
     )
     (pin "1" (uuid 672afb1d-5145-4199-a0e1-8df9ec91a949))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR037") (unit 1)
@@ -918,7 +1008,7 @@
   (symbol (lib_id "Device:LED") (at 94.996 50.292 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e633a17-c696-4c3e-86d5-e1c3216e6739)
-    (property "Reference" "D6" (at 93.726 45.212 0)
+    (property "Reference" "D?" (at 93.726 45.212 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "YELLOW" (at 93.726 47.5234 0)
@@ -942,9 +1032,9 @@
     (pin "1" (uuid e1163e3b-e3a6-4763-b38d-480ba9acbfea))
     (pin "2" (uuid b91a9928-1389-4a10-94ce-3c1f1aad34b6))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "D6") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "D7") (unit 1)
@@ -956,7 +1046,7 @@
   (symbol (lib_id "Device:R") (at 84.836 32.512 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47636397-c38a-4107-a786-b5510030d88a)
-    (property "Reference" "R18" (at 84.836 27.2542 90)
+    (property "Reference" "R?" (at 84.836 27.2542 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 84.836 29.5656 90)
@@ -980,9 +1070,9 @@
     (pin "1" (uuid f70519f4-edde-48a8-90e7-b5f82fd49031))
     (pin "2" (uuid f09e0430-627c-4ce0-8cfe-835f7486647c))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "R18") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "R20") (unit 1)
@@ -991,26 +1081,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 25.4 56.896 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 26.924 56.896 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4934bbb6-2a00-4b8f-b2fb-a37c891566c9)
-    (property "Reference" "#PWR038" (at 25.4 63.246 0)
+    (property "Reference" "#PWR?" (at 26.924 63.246 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 25.527 61.2902 0)
+    (property "Value" "GND" (at 27.051 61.2902 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 25.4 56.896 0)
+    (property "Footprint" "" (at 26.924 56.896 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 25.4 56.896 0)
+    (property "Datasheet" "" (at 26.924 56.896 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1618f989-b38f-4770-9790-33794db82181))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR034") (unit 1)
@@ -1019,26 +1109,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 25.4 82.296 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 26.924 82.296 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5267be5f-dcf7-4d0e-808f-d12e255c3386)
-    (property "Reference" "#PWR034" (at 25.4 88.646 0)
+    (property "Reference" "#PWR?" (at 26.924 88.646 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 25.527 86.6902 0)
+    (property "Value" "GND" (at 27.051 86.6902 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 25.4 82.296 0)
+    (property "Footprint" "" (at 26.924 82.296 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 25.4 82.296 0)
+    (property "Datasheet" "" (at 26.924 82.296 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f99a3c13-8280-4e29-851c-800835904927))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR036") (unit 1)
@@ -1050,7 +1140,7 @@
   (symbol (lib_id "power:GND") (at 108.966 55.372 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59646661-2b58-4b68-baf9-25b5dd6d7dac)
-    (property "Reference" "#PWR037" (at 108.966 61.722 0)
+    (property "Reference" "#PWR?" (at 108.966 61.722 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 109.093 59.7662 0)
@@ -1064,9 +1154,9 @@
     )
     (pin "1" (uuid de635ddd-0781-4396-b085-3dabff7e8949))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR040") (unit 1)
@@ -1078,7 +1168,7 @@
   (symbol (lib_id "Device:R") (at 84.836 50.292 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a3d0346-8d39-4a73-b36c-1720c0ed6322)
-    (property "Reference" "R20" (at 84.836 45.0342 90)
+    (property "Reference" "R?" (at 84.836 45.0342 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 84.836 47.3456 90)
@@ -1102,9 +1192,9 @@
     (pin "1" (uuid e44fcd5f-2030-460c-8906-5b569fa0fc73))
     (pin "2" (uuid 9fa9c14c-51eb-46fb-afb6-c40ae2022918))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "R20") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "R22") (unit 1)
@@ -1116,7 +1206,7 @@
   (symbol (lib_id "Device:R") (at 84.836 23.622 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7f2ee851-3ad0-414a-9d27-f76beb8e9538)
-    (property "Reference" "R17" (at 84.836 18.3642 90)
+    (property "Reference" "R?" (at 84.836 18.3642 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 84.836 20.6756 90)
@@ -1140,9 +1230,9 @@
     (pin "1" (uuid 3edf2020-803f-4bb6-9c63-ca579f433933))
     (pin "2" (uuid 960421b0-54e1-4e96-9ed3-d2f9df7db774))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "R17") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "R19") (unit 1)
@@ -1154,7 +1244,7 @@
   (symbol (lib_id "lofence-rescue:+3.3V-power") (at 78.486 23.622 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c267573-796d-4a93-b981-5148aee9f466)
-    (property "Reference" "#PWR028" (at 82.296 23.622 0)
+    (property "Reference" "#PWR?" (at 82.296 23.622 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 74.0918 23.241 0)
@@ -1168,9 +1258,9 @@
     )
     (pin "1" (uuid 9b0aac25-0254-424d-bdc5-98452ec7c982))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR039") (unit 1)
@@ -1182,7 +1272,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x03_Odd_Even") (at 36.83 26.162 0) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid 9784747c-2e58-4f19-98d6-6fe656cf0b7b)
-    (property "Reference" "J2" (at 38.1 18.1102 0)
+    (property "Reference" "J?" (at 38.1 18.1102 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ISP" (at 38.1 20.4216 0)
@@ -1207,9 +1297,9 @@
     (pin "5" (uuid 11000c61-b6a4-4fac-aeb1-342721b69059))
     (pin "6" (uuid 4fef662a-74fb-4506-a554-b3d96360a63a))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "J2") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "J3") (unit 1)
@@ -1218,26 +1308,26 @@
     )
   )
 
-  (symbol (lib_id "lofence-rescue:+3.3V-power") (at 25.4 49.276 0) (unit 1)
+  (symbol (lib_id "lofence-rescue:+3.3V-power") (at 26.924 49.276 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a44cbd84-b10c-4f14-8b94-aa72bfe4bcaa)
-    (property "Reference" "#PWR036" (at 25.4 53.086 0)
+    (property "Reference" "#PWR?" (at 26.924 53.086 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 25.781 44.8818 0)
+    (property "Value" "+3.3V" (at 27.305 44.8818 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 25.4 49.276 0)
+    (property "Footprint" "" (at 26.924 49.276 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 25.4 49.276 0)
+    (property "Datasheet" "" (at 26.924 49.276 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2e62b260-72e2-4501-b4bb-c814fb20657a))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR033") (unit 1)
@@ -1246,25 +1336,25 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 33.02 51.816 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 34.544 51.816 0) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid ad6337be-581f-4abc-8f7e-9c89a851fb46)
-    (property "Reference" "J3" (at 35.56 54.356 90)
+    (property "Reference" "J?" (at 37.084 54.356 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "DEBUG MCU" (at 38.1 58.166 90)
+    (property "Value" "DEBUG MCU" (at 39.624 58.166 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 33.02 51.816 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 34.544 51.816 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 33.02 51.816 0)
+    (property "Datasheet" "~" (at 34.544 51.816 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "TME Order #" "" (at 33.02 51.816 0)
+    (property "TME Order #" "" (at 34.544 51.816 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB Position Offset" "" (at 33.02 51.816 0)
+    (property "JLCPCB Position Offset" "" (at 34.544 51.816 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 304214fa-0bca-4b94-ad18-2019473033a1))
@@ -1272,9 +1362,9 @@
     (pin "3" (uuid 0e3f23d7-50d8-4aaf-9627-e9772c8ebb57))
     (pin "4" (uuid 70c9455e-da88-41ce-860d-5bafc8175158))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "J3") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "J5") (unit 1)
@@ -1286,7 +1376,7 @@
   (symbol (lib_id "power:GND") (at 46.99 31.242 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid adc9bb48-8552-41cd-8474-28cad99b317a)
-    (property "Reference" "#PWR039" (at 46.99 37.592 0)
+    (property "Reference" "#PWR?" (at 46.99 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 47.117 35.6362 0)
@@ -1300,9 +1390,9 @@
     )
     (pin "1" (uuid 1e7add69-63d0-41d0-a708-a9a1984e013d))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "#PWR038") (unit 1)
@@ -1314,7 +1404,7 @@
   (symbol (lib_id "Device:LED") (at 94.996 59.182 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b317869e-a28a-4c1f-bd71-66432750ca95)
-    (property "Reference" "D7" (at 93.726 54.3306 0)
+    (property "Reference" "D?" (at 93.726 54.3306 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RED" (at 93.726 56.642 0)
@@ -1338,9 +1428,9 @@
     (pin "1" (uuid 44075a19-6007-46fd-b172-02165a254fbd))
     (pin "2" (uuid 1558c750-2025-4ea2-ad38-2965b18c9709))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "D7") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "D8") (unit 1)
@@ -1352,7 +1442,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 108.966 32.512 90) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid c8b3684b-4173-4c68-9471-abdb1b3810f6)
-    (property "Reference" "J1" (at 107.8992 30.48 0)
+    (property "Reference" "J?" (at 107.8992 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DEBUG LED" (at 110.2106 30.48 0)
@@ -1374,9 +1464,9 @@
     (pin "2" (uuid f5b6d67b-f2ca-46fb-9d28-e6afb95630dd))
     (pin "3" (uuid 2134316f-9143-45c2-b77a-30926c1dff7d))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "J4") (unit 1)
@@ -1385,10 +1475,45 @@
     )
   )
 
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 34.544 102.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp yes)
+    (uuid da9c5934-45b3-4a1d-934e-1b9086cdca8a)
+    (property "Reference" "J?" (at 37.084 105.41 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "FLASH LA" (at 39.624 109.22 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 34.544 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 34.544 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "TME Order #" "" (at 34.544 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Position Offset" "" (at 34.544 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9243a523-e1c3-4653-a4e2-969c67e4f246))
+    (pin "2" (uuid 6a129b61-983f-48ca-8cb4-10716cf5bed2))
+    (instances
+      (project "LoFence"
+        (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
+          (reference "J?") (unit 1)
+        )
+        (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
+          (reference "J7") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:LED") (at 94.996 32.512 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e113535c-4293-459b-a245-2a8d903234e6)
-    (property "Reference" "D4" (at 93.726 27.432 0)
+    (property "Reference" "D?" (at 93.726 27.432 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "YELLOW" (at 93.726 29.7434 0)
@@ -1412,9 +1537,9 @@
     (pin "1" (uuid bc345d0a-d2fc-48ab-ba21-22fa2dcd4598))
     (pin "2" (uuid ac7c327d-56c9-4ca5-9d3e-47ac844691d6))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "D4") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "D5") (unit 1)
@@ -1426,7 +1551,7 @@
   (symbol (lib_id "Device:R") (at 84.836 59.182 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f018a816-c9bf-4c59-9f97-ab31f7d0e0b7)
-    (property "Reference" "R21" (at 84.836 53.9242 90)
+    (property "Reference" "R?" (at 84.836 53.9242 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 84.836 56.2356 90)
@@ -1450,9 +1575,9 @@
     (pin "1" (uuid e868f201-70ce-4010-b131-4ab2395b962e))
     (pin "2" (uuid 023f94c9-b366-4deb-91e8-bd4f2e72f64f))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "R21") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "R23") (unit 1)
@@ -1464,7 +1589,7 @@
   (symbol (lib_id "Device:R") (at 84.836 41.402 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb3d1d16-3cd0-4263-85b5-f550c0440176)
-    (property "Reference" "R19" (at 84.836 36.1442 90)
+    (property "Reference" "R?" (at 84.836 36.1442 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 84.836 38.4556 90)
@@ -1488,9 +1613,9 @@
     (pin "1" (uuid 1a4e00aa-4b0e-48a4-8d84-b78ea8555334))
     (pin "2" (uuid 71c4a93f-d6f8-45d3-b6fc-a2b8b6f5c93b))
     (instances
-      (project "LoFence-V2"
+      (project "LoFence"
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c"
-          (reference "R19") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/8df399d3-3099-43b5-83f1-a83fbf65205c/efd635f6-2055-4669-9417-4264f7a45d39"
           (reference "R21") (unit 1)
