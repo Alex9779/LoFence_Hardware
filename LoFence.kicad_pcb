@@ -2383,7 +2383,7 @@
     (at 93.3704 61.9252 -90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
-    (property "JLCPCB Position Offset" "")
+    (property "JLCPCB Position Offset" "-2.54,0")
     (property "JLCPCB Rotation Offset" "90")
     (property "Sheetfile" "LoFence_Con-Dbg.kicad_sch")
     (property "Sheetname" "Connectors and Debug")
