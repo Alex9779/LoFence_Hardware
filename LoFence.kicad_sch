@@ -4180,6 +4180,9 @@
     (property "JLCPCB Position Offset" "" (at 55.88 21.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "JLCPCB Part #" "C3016502" (at 55.88 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 39ca4391-3b97-4f2d-aea1-b9234e884f2b))
     (pin "2" (uuid aa8f2164-c1d5-4fe9-b1d5-43a45abe21e2))
     (instances
