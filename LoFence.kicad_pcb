@@ -7753,10 +7753,11 @@
     (property "Sheetname" "Connectors and Debug")
     (property "TME Order #" "")
     (property "dnp" "")
+    (property "exclude_from_bom" "")
     (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
     (property "ki_keywords" "connector")
     (path "/efd635f6-2055-4669-9417-4264f7a45d39/da9c5934-45b3-4a1d-934e-1b9086cdca8a")
-    (attr through_hole)
+    (attr through_hole exclude_from_bom)
     (fp_text reference "J7" (at 0 -2.33) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6042d0c8-a58a-4ec4-950d-3bfba1c936d5)
