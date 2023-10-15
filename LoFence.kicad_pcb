@@ -616,7 +616,7 @@
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 446497be-83e7-4b19-958e-1fe3197d1604))
     (pad "62" smd rect (at -7.45 -11.825 270) (size 0.7 2.75) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 7f81d44a-7d28-4439-b833-a881fa9a723c))
-    (model "${KICAD_ALITECS}/3dmodels/LA66.step"
+    (model "${KIPRJMOD}/packages3D/LA66.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
