@@ -2967,6 +2967,14 @@
     (uuid 784616ca-1f98-4277-9057-8bb7a4f0facd)
   )
 
+  (text_box "R3 options for maximum measurable fence voltage:\n12.0kV --> 5k49\n11.8kV --> 5k6 (default)\n9.5kV  --> 6k98\n7.6kV  --> 8k66\n6.0kV  --> 11k"
+    (at 93.98 167.894 0) (size 31.242 15.748)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid e0a04eb6-3501-449d-91d0-ecb3f395b5f6)
+  )
+
   (text "Power Supply" (at 91.44 16.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0c1328c3-9df8-443d-9f0a-1ac9f6c9bc13)
