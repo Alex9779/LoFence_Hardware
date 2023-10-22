@@ -4079,7 +4079,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 35.56 21.59 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005c6bafc5)
     (property "Reference" "R1" (at 35.56 16.3322 90)
       (effects (font (size 1.27 1.27)))
@@ -4111,7 +4111,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 45.72 21.59 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005c6bb07b)
     (property "Reference" "R2" (at 45.72 16.3322 90)
       (effects (font (size 1.27 1.27)))
@@ -4178,7 +4178,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 66.04 21.59 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005c6bb291)
     (property "Reference" "R4" (at 66.04 16.3322 90)
       (effects (font (size 1.27 1.27)))
